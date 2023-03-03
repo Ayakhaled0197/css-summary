@@ -160,8 +160,8 @@ div {
 the calculation : <br/>
 > 320px (width)+ 20px (left + right padding)+ 10px (left + right border)+ 0px (left + right margin) = 350px
 <br/>
- 
-**CSS Outline** 
+
+### CSS outline
 
 ```
 p {
@@ -172,6 +172,168 @@ p {
   text-align: center;
 }
 ```
+CSS has the following outline properties: <br/>
+- `outline-style` 
+- `outline-color`
+- `outline-width`
+- `outline-offset`
+- `outline`
+
+> outline-style ,  outline-width , outline-color, property has the same values that border propery takes .
+
+**CSS Outline - Shorthand property**
+a shorthand property for setting the following individual outline properties:
+<br/>
+- `outline-width`
+- `outline-style` (required)
+- `outline-color`
+**CSS Outline Offset :**
+adds space between an outline and the edge/border of an element.
+
+### CSS Text
+
+**Text Color** :
+- `color` for coloring the text.
+-  `background-color` for coloring the background of the text.
+
+**CSS Text Alignment** :
+- `text-align` used to set the horizontal alignment of a text `left` or `right` `aligned` , `centered`, or `justified`.
+
+**Text Decoration** :
+- `text-decoration-line`
+- `text-decoration-style`
+- `text-decoration-thickness`
+- `text-decoration`
+
+> `text-decoration-line` property is used to add a decoration line to text.
+values : `overline` , `line-through` , `underline` 
+
+> `text-decoration-style` property is used to set the style of the decoration line.
+values : same as broder property's values.
+
+> `text-decoration-thickness` property is used to set the thickness of the decoration line.
+values : by px , em , pt etc
+
+> `text-decoration` Sets all the text-decoration properties in one declaration
+values : (best practise) `none` . <br/>
+
+**CSS Text Transformation** 
+ used to specify uppercase and lowercase letters in a text. <br/>
+ Example:
+ ```
+ p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+```
+
+**CSS Text Spacing** :
+
+- `text-indent`
+ used to specify the indentation of the first line of a text 
+ ```
+ p {
+  text-indent: 50px;
+}
+```
+- `letter-spacing` letter-spacing property is used to specify the space between the characters in a text.
+```
+h1 {
+  letter-spacing: 5px;
+}
+h2 {
+  letter-spacing: -2px;
+}
+```
+
+- `line-height`line-height property is used to specify the space between lines
+```
+p.small {
+  line-height: 0.8;
+}
+```
+- `word-spacing` word-spacing property is used to specify the space between the words in a text.
+```
+p.one {
+  word-spacing: 10px;
+}
+
+```
+- `white-space` white-space property specifies how white-space inside an element is handled.
+```
+p {
+  white-space: nowrap;
+}
+```
+### Text Shadow
+In its simplest use, you only specify the horizontal shadow and the vertical shadow.
+```
+h1 {
+  text-shadow: 2px 2px;
+}
+```
+add a color (red) to the shadow:
+```
+h1 {
+  text-shadow: 2px 2px red;
+}
+```
+add a blur effect (5px) to the shadow:
+```
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+```
+### CSS Fonts
+`font-family` property to specify the font of a text. <br/>
+```
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+```
+
+> Fallback Fonts : add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on.
+
+**Font Style** :
+```
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+```
+**Font weight** : specifies the weight of a font
+```
+p{
+  font-weight: 700;
+}
+```
+
+
+
+
+
 
 
 
