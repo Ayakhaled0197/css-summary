@@ -329,6 +329,212 @@ p{
   font-weight: 700;
 }
 ```
+**CSS Font Size** :
+```
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+}
+```
+> EM = time , this value tells the brower to inherit the mean value from the parent ; ex : the parent font size is 20 px , then 1em to the child equals 20 px , 2em equals 40px and so on .
+>NOTE: the root element (html) defalut font size is 16px , so the defalut value for any element inside the root has a 1em=16px value , unless it's a DESCENDANT element
+
+**Font Size With Em** :
+```
+h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+```
+### CSS Google Fonts
+**Example**
+```
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+</head>
+```
+**Font shorthand  Property** 
+ shorthand property for :
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `font-size/line-height`
+- `font-family`
+```
+p.a {
+  font: 20px Arial, sans-serif;
+}
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+```
+### how to pair with google fonts
+1- search for **google fonts**.<br/>
+![google fonts](https://i.pinimg.com/originals/4a/2c/67/4a2c675940f228403abc2d9dc021d96a.png)
+
+2- choose the font you want then copy the link element to your project
+![google fonts](https://static.tildacdn.com/tild3461-3032-4734-a563-616266336264/Screenshot__2020-12-.png)
+3- then choose import and copy the code to your stylesheet .<br/>
+4- copy the css code and put it in universal selector to add the font family to the whole project .<br/>
+
+### Font Awesome Icons
+```
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+</body>
+</html>
+```
+**tutorial for adding icons** : <br/>
+1- go to [font awesome](https://fontawesome.com/) .<br/>
+2- click start for free .<br/>
+3- choose the icon you desire . <br/>
+4- copy the code to you stylesheet .<br/>
+### CSS Links
+```
+a {
+  color: hotpink;
+}
+```
+> links can be styled differently depending on what state they are in.
+
+The four links states are:
+
+- `a:link` a normal, unvisited link
+- `a:visited` a link the user has visited
+- `a:hover` a link when the user mouses over it
+- `a:active` a link the moment it is clicked
+
+```
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+```
+> a:hover MUST come after a:link and a:visited ,a:active MUST come after a:hover.
+
+### CSS Lists
+
+**Different List Item Markers** : 
+```
+ul.a {
+  list-style-type: circle;
+}
+ul.b {
+  list-style-type: square;
+}
+ol.c {
+  list-style-type: upper-roman;
+}
+ol.d {
+  list-style-type: lower-alpha;
+}
+```
+`list-style-image` property specifies an image as the list item marker . <br/>
+```
+ul {
+  list-style-image: url('sqpurple.gif');
+}
+```
+`list-style-position` property specifies the position of the list-item markers (bullet points).
+>`list-style-position: outside;` means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default check [list styling](https://www.w3schools.com/Css/css_list.asp) <br/> 
+>`list-style-position: inside;` means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start. 
+<br/>
+
+**Remove Default Settings** : <br/>
+
+```
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+```
+
+### CSS Tables 
+
+**Table Borders** : <br/>
+Example : 
+```
+table, th, td {
+  border: 1px solid;
+}
+```
+**Collapse Table Borders** : <br/>
+`border-collapse` property sets whether the table borders should be collapsed into a single border.
+```
+table {
+  border-collapse: collapse;
+}
+```
+**Horizontal Alignment**
+```
+td {
+  text-align: center;
+}
+```
+**Vertical Alignment**
+```
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+```
+**Horizontal Dividers** 
+```
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+```
+**Hoverable Table**
+```
+tr:hover {background-color: coral;}
+```
+**Striped Tables** <br/>
+for zebra-striped tables, use the `nth-child()` selector and add a `background-color` to all even (or odd) table rows. 
+```
+tr:nth-child(even) {background-color: #f2f2f2;}
+```
+
+
+
+
 
 
 
