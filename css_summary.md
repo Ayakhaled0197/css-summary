@@ -626,7 +626,45 @@ img {
 
 > If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top
 
+### CSS Layout - Overflow
+ `overflow` property controls what happens to content that is too big to fit into an area. <br/>
+ 
+  overflow property has the following values:
 
+- `visible`  Default. The overflow is not clipped. The content renders outside the element's box
+- `hidden` The overflow is clipped, and the rest of the content will be invisible
+- `scroll` The overflow is clipped, and a scrollbar is added to see the rest of the content
+- `auto` Similar to scroll, but it adds scrollbars only when necessary
+
+> Note: The overflow property only works for block elements with a specified height.
+
+**overflow-x and overflow-y** <br/>
+- `overflow-x` specifies what to do with the left/right edges of the content.
+- `overflow-y` specifies what to do with the top/bottom edges of the content.
+
+**CSS overflow-wrap Property**
+```
+div.a {
+  overflow-wrap: normal;
+}
+
+div.b {
+  overflow-wrap: break-word;
+}
+
+div.c {
+  overflow-wrap: anywhere;
+}
+```
+
+### CSS Layout - display: inline-block
+> Compared to `display: inline;` the major difference is that `display: inline-block;` allows to set a width and height on the element.
+
+> with `display: inline-block;` the top and bottom margins/paddings are respected, but with `display: inline;` they are not.
+
+> Compared to `display: block;` the major difference is that `display: inline-block;` does not add a line-break after the element, so the element can sit next to other elements.
+
+### CSS Layout - Horizontal & Vertical Align
 
 
 ## phase 2
