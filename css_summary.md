@@ -532,14 +532,99 @@ for zebra-striped tables, use the `nth-child()` selector and add a `background-c
 tr:nth-child(even) {background-color: #f2f2f2;}
 ```
 
+### CSS Layout - The display Property
+> Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
 
+**Block-level Elements** : <br/>
+> A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+Examples of block-level elements: <br/>
+- `<div>`
+-  `<h1>`, `<h6>`
+- `<p>`
+- `<form>`
+- `<header>`
+- `<footer>`
+- `<section>`
 
+**Inline Elements** :
+> An inline element does not start on a new line and only takes up as much width as necessary.
+Examples of inline elements: <br/>
 
+- `<span>`
+- `<a>`
+- `<img>`
 
+**flex box** 
+> `display: none;` is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.The `<script>` element uses `display: none;` as default. 
 
+>Notice that when the `flex direction` is a column, `justify-content` changes to the vertical and `align-items` to the horizontal.
 
+>Sometimes reversing the row or column order of a container is not enough. In these cases, we can apply the `order` property to individual items. By default, items have a value of 0, but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2). NOTE that the start of any block is 0
 
+>Another property you can apply to individual items is `align-self`. This property accepts the same values as align-items and its value for the specific item.
 
+>This can be confusing, but `align-content` determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container. When there is only one line, align-content has no effect.
+
+**Hide an Element - display:none or visibility:hidden?** : <br/>
+> Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there
+```
+h1.hidden {
+  display: none;
+}
+```
+> `visibility:hidden;` also hides an element. However, the element will still take up the same space as before. The element will be hidden, but still affect the lay
+```
+h1.hidden {
+  visibility: hidden;
+}
+```
+
+### CSS Calculation
+```
+p{
+width : calc(((100%-60))/4);
+margin-left: 15px;
+}
+/*
+space 15px
+total boxes = 4 , total spaces = 4*15=60px
+margin-left : 15px
+box width = ((100%-60))/4
+
+*/
+```
+### CSS Layout - The position Property 
+position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). <br/>
+
+- `static`
+- `relative`
+- `fixed`
+- `absolute`
+- `sticky`
+> Elements are then positioned using the `top`, `bottom`, `left`, and `righ`t properties. However, these properties will not work unless the position property is set first.
+
+> `position: static;` is not positioned in any special way; it is always positioned according to the normal flow of the page
+
+> `position: relative;` is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element
+
+> `position: fixed;` is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+> `position: sticky;` is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given  <br/>offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+### CSS Layout - The z-index Property
+`z-index` property specifies the stack order of an element. <br/>
+Example :
+```
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+```
+> Note: `z-index` only works on positioned elements ( `position: absolute` , `position: relative` , `position: fixed` , or `position: sticky` ) and flex items (elements that are direct children of `display: flex;` elements).
+
+> If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top
 
 
 
