@@ -759,6 +759,29 @@ q:lang(no) {
   content: url(smiley.gif);
 }
  ```
+ **CSS - The ::marker Pseudo-element**
+ The `::marker` pseudo-element selects the markers of list items.
+ ```
+ ::marker {
+  color: red;
+  font-size: 23px;
+}
+ ```
+ **CSS - The ::selection Pseudo-element**
+ The `::selection` pseudo-element matches the portion of an element that is selected by a user.
+ ```
+ ::selection {
+  color: red;
+  background: yellow;
+}
+ ```
+ ### vendor prefixes
+ to use a feature added to the web development toolkit & that feature is not fully supported we use <br/>
+ `-webkit-` and that's for : chrome , safari , new opera , version 
+ `-moz-` for firefox
+ `-ms-` for ie , edge
+ `-o-` for old versions of opera
+ 
  
 ## phase 2
 ## phase 3
