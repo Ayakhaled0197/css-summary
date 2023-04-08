@@ -603,7 +603,7 @@ position property specifies the type of positioning method used for an element (
 - `sticky`
 > Elements are then positioned using the `top`, `bottom`, `left`, and `righ`t properties. However, these properties will not work unless the position property is set first.
 
-> `position: static;` is not positioned in any special way; it is always positioned according to the normal flow of the page
+> `position: static;` is not positioned in any special way; it is always positioned according to the normal flow of the page,HTML elements are positioned static by default.
 
 > `position: relative;` is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element
 
@@ -664,9 +664,77 @@ div.c {
 
 > Compared to `display: block;` the major difference is that `display: inline-block;` does not add a line-break after the element, so the element can sit next to other elements.
 
-### CSS Layout - Horizontal & Vertical Align
+### CSS Pseudo-classes
+> A pseudo-class is used to define a special state of an element.
 
+For example, it can be used to:
 
+- Style an element when a user mouses over it
+- Style visited and unvisited links differently
+- Style an element when it gets focus
+
+**The syntax of pseudo-classes:**
+```
+selector:pseudo-class {
+  property: value;
+}
+```
+**Anchor Pseudo-classes**
+```
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+```
+> Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+**Pseudo-classes and HTML Classes**
+```
+a.highlight:hover {
+  color: #ff0000;
+}
+```
+**CSS - The :first-child Pseudo-class**
+```
+p:first-child {
+  color: blue;
+}
+```
+**CSS - The :lang Pseudo-class**
+The `lang`pseudo-class allows you to define special rules for different languages.
+In the example below, `lang`defines the quotation marks for <q> elements with lang="no":
+ ```
+ <html>
+<head>
+<style>
+q:lang(no) {
+  quotes: "~" "~";
+}
+</style>
+</head>
+<body>
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+</body>
+</html>
+ ```
+ 
 ## phase 2
 ## phase 3
 
