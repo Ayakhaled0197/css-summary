@@ -734,6 +734,31 @@ q:lang(no) {
 </body>
 </html>
  ```
+### CSS Pseudo-elements
+ **Syntax**
+ ```
+ selector::pseudo-element {
+  property: value;
+}
+ ```
+ > Notice the double colon notation - ::first-line versus :first-line , The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+ 
+ **CSS - The ::before Pseudo-element**
+ The `::before` pseudo-element can be used to insert some content before the content of an element.
+ 
+ ```
+ h1::before {
+  content: url(smiley.gif);
+}
+ ```
+ **CSS - The ::after Pseudo-element**
+ The ::after pseudo-element can be used to insert some content after the content of an element.
+ 
+ ```
+ h1::after {
+  content: url(smiley.gif);
+}
+ ```
  
 ## phase 2
 ## phase 3
