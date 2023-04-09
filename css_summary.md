@@ -874,7 +874,171 @@ Create a dropdown menu that allows the user to choose an option from a list.
   </div>
 </div>
   ```
+  
+  
+  ### CSS Navigation Bar
+  ### CSS Dropdowns
+  ### CSS Image Gallery
+  ### CSS Image Sprites
+  ### CSS Attribute Selectors
+  ### CSS Forms
+  ### CSS Counters
+  ### CSS Website Layout
+  ### CSS Units
+  ### CSS Specificity
+  ### CSS The !important Rule
+  ### CSS Math Functions
+  
  
 ## phase 2
+  ## CSS advanced
+  
+  ### CSS Rounded Corners
+  ### CSS Border Images
+  ### CSS Multiple Backgrounds
+  ### CSS Colors
+  ### CSS Color Keywords
+  ### CSS Gradients
+  ### CSS Radial Gradients
+  ### CSS Conic Gradients
+  ### CSS Shadow Effects
+  
+  
+  ### CSS Box Shadow
+  The CSS `box-shadow` property is used to apply one or more shadows to an element.
+  
+  Specify a Horizontal and a Vertical Shadow
+  ```
+  div {
+  box-shadow: 10px 10px ;
+}
+  ```
+  
+  Specify a Color for the Shadow
+  ```
+ div {
+  box-shadow: 10px 10px lightblue;
+}
+ ```
+  
+  Add a Blur Effect to the Shadow
+  ```
+  div {
+  box-shadow: 10px 10px 5px lightblue;
+}
+  ```
+  
+  Set the Spread Radius of the Shadow
+  ```
+  div {
+  box-shadow: 10px 10px 5px 12px lightblue;
+   }
+  ```
+  > inset & outset better be controlled from the browser
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ### CSS Text Effects
+  ### CSS Web Fonts
+  ### CSS 2D Transforms
+  ### CSS 3D Transforms
+  
+  
+  
+  
+  ### CSS Transitions
+  CSS transitions allows you to change property values smoothly, over a given duration.
+  
+  
+  
+  ### CSS Animations
+  ### CSS Tooltip
+  ### CSS Styling Images
+  ### CSS Image Reflection
+  ### CSS The object-fit Property
+  ### CSS The object-position Property
+  ### CSS Masking
+  ### CSS Buttons
+  ### CSS Pagination Examples
+  ### CSS Multiple Columns
+  ### CSS User Interface
+  ### CSS Variables - The var() Function
+  ### CSS Overriding Variables
+  ### CSS Change Variables With JavaScript
+  ### CSS Using Variables in Media Queries
+  
+  
+  ### CSS Box Sizing
+  The CSS `box-sizing` property allows us to include the padding and border in an element's total width and height. <br/>
+  **By default, the width and height of an element is calculated like this:**
+>width + padding + border = actual width of an element
+>height + padding + border = actual height of an element
+  
+  **`box-sizing property` allows us to include the padding and border in an element's total width and height**
+  ```
+  .div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+  ```
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ### CSS Media Queries
+  ### CSS Media Queries
+  ### CSS Flexbox
+  ### CSS Flex Container
+  ### CSS Flex Items
+  ### CSS Flex Items
+  
+  
+  ### CSS Grid Layout Module
+  
+  ### CSS Grid Container
+  ### CSS Grid Item
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ## phase 3
 
