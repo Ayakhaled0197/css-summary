@@ -31,7 +31,7 @@
 3-Browser default.<br/>
 
 
-## phase 1
+## phase 1 
 
 ### link css
 - how to link the external style sheet to your html web page :  <br/>
